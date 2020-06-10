@@ -38,7 +38,7 @@ void loop() {
     digitalWrite(waitLight,HIGH);
     digitalWrite(detectLight,LOW);
     digitalWrite(readyLight,LOW);
-    delay(6000);
+    delay(6000); /* The delay is right after detecting something, to stabalize the temperature again and make sure the next reading is accurate*/
     digitalWrite(waitLight,LOW);
     digitalWrite(detectLight,LOW);
     digitalWrite(readyLight,HIGH);
